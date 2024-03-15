@@ -1,8 +1,10 @@
-function fibonacci(num) {
+function fibonacci(n) {
 // your code here
-	if(num<=1)return 0
-	if(num==2)return 1
-	return fibonacci(num-1)+fibonacci(num-2)
+	   if (n <= 1) {
+        return n;
+    } else {
+        return fibonacci(n - 1) + fibonacci(n - 2);
+    }
 }
 
 module.exports = fibonacci;
